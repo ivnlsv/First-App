@@ -1,17 +1,25 @@
 <template>
   <div id="app">
-    Hello Vue.JS
+    <span>Hello Vue.JS</span>
+    <hr>
+    <first-component />
   </div>
 </template>
 
 <script>
 
+import FirstComponent from './components/FirstComponent.vue';
 
 export default {
-   
+  components: {FirstComponent}
 }
 </script>
 
-<style>
+<style lang="scss">
+div{
+  span {
+  color: green;
+}
+}
 
 </style>
